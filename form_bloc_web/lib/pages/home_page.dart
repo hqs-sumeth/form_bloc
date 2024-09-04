@@ -61,6 +61,15 @@ class HomePage extends StatelessWidget {
                   child: TextButton(
                     onPressed: () => Navigator.of(context)
                         .pushReplacementNamed(RouteNames.simpleExample),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.black38, shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        side: const BorderSide(
+                          width: 2,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                     child: Container(
                       alignment: Alignment.center,
                       padding: const EdgeInsets.fromLTRB(0, 16, 0, 16),
@@ -71,16 +80,6 @@ class HomePage extends StatelessWidget {
                           fontSize: 24,
                           color: Colors.white,
                           fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ),
-                    style: TextButton.styleFrom(
-                      primary: Colors.black38,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8.0),
-                        side: const BorderSide(
-                          width: 2,
-                          color: Colors.white,
                         ),
                       ),
                     ),

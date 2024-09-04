@@ -23,7 +23,7 @@ class App extends StatelessWidget {
       ),
       builder: (context, child) {
         return FormThemeProvider(
-          theme: FormTheme(
+          theme: const FormTheme(
             checkboxTheme: CheckboxFieldTheme(
               canTapItemTile: true,
             ),
@@ -34,7 +34,7 @@ class App extends StatelessWidget {
           child: child!,
         );
       },
-      home: AllFieldsForm(),
+      home: const AllFieldsForm(),
     );
   }
 }

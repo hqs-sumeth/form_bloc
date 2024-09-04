@@ -143,7 +143,7 @@ dependencies:
   }) =>
       CodeCard(
         code: code,
-        fileName: 'main.dart' + (nestedPath != null ? ' > $nestedPath' : ''),
+        fileName: 'main.dart${nestedPath != null ? ' > $nestedPath' : ''}',
         showCopyButton: showCopyButton,
         padding: padding,
       );

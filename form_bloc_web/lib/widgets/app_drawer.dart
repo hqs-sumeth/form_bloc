@@ -155,7 +155,7 @@ class _AppDrawerState extends State<AppDrawer> with RouteAware {
       alignment: Alignment.centerLeft,
       child: Text(
         'Examples',
-        style: Theme.of(context).textTheme.headline6,
+        style: Theme.of(context).textTheme.titleLarge,
       ),
     );
   }
@@ -176,9 +176,9 @@ class _AppDrawerState extends State<AppDrawer> with RouteAware {
               Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.only(right: 55),
-                child: Column(
+                child: const Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
+                  children: <Widget>[
                     Text(
                       'form_bloc',
                       style: TextStyle(
